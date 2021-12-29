@@ -1,0 +1,24 @@
+* {
+    font-family: 'Avenir', sans-serif;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@import 'libs/bootstrap-reboot.min';
+
+a {
+    color: #474654;
+    &:hover {
+        text-decoration: none;
+        color: #474654;
+    }
+}
+
+@import 'base/fonts';
+@import 'base/variables';
+
+@import 'blocks/header';
+@import 'blocks/promo';

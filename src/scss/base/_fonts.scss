@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Gotham Pro', sans-serif;
+    src: local('gothampro_light'),
+        url(../../fonts/gothampro_light.ttf) format(ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir-Book'),
+        url('../../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir-Book.woff2') format('woff2'),
+        url('../../fonts/Avenir-Book.woff') format('woff'),
+        url('../../fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir', sans-serif;
+    src: local('Avenir-Medium'),
+        url('../../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../../fonts/Avenir-Medium.woff') format('woff'),
+        url('../../fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir', sans-serif;
+    src: local('Avenir-Black'),
+        url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Black.woff2') format('woff2'),
+        url('Avenir-Black.woff') format('woff'),
+        url('Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
