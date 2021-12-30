@@ -1,3 +1,5 @@
+@import 'libs/bootstrap-reboot.min';
+
 * {
     font-family: 'Avenir Next', sans-serif;
 }
@@ -6,9 +8,6 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-@import 'libs/bootstrap-reboot.min';
-
 a {
     color: #474654;
     &:hover {
@@ -24,3 +23,181 @@ a {
 @import 'blocks/promo';
 @import 'blocks/titles';
 @import 'blocks/buttons';
+@import 'libs/slick';
+
+.services {
+    &__wrapper {
+        display: flex;
+    }
+    &-item {
+        padding: 152px 40px 150px 30px;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        max-height: 664px;
+        &:first-child {
+            background: url('../img/services-item_bg.png') $main-color;
+            margin-right: 29px;
+            .title_small {
+                color: #fff;
+            }
+            .services-item__descr {
+                color: #fff;
+            }
+            .services-item__link {
+                color: #fff;
+            }
+        }
+        .title {
+            margin-top: 58px;
+        }
+        &__icon {
+            img {
+                width: 71px;
+                height: 71px;
+            }
+        }
+        &__descr {
+            max-width: 256px;
+            margin-top: 27px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: $color-descr;
+        }
+        &__link {
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: $main-color;
+            img {
+                margin-left: 15px;
+            }
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+.features {
+    position: relative;
+    padding: 150px 0 140px;
+    background-color: #f9f9f9;
+    .title {
+        &:first-child {
+            margin-left: -5px;
+        }
+        &_subtitle {
+            margin-bottom: 53px;
+        }
+    }
+    &__photo {
+        position: absolute;
+        left: 0;
+        bottom: 205px;
+    }
+    &__wrapper {
+        padding-left: 380px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        max-width: 351px;
+        margin: 0 65px 59px 0;
+        &__icon {
+            img {
+                height: 72px;
+            }
+        }
+        .title_small {
+            margin-top: 58px;
+        }
+        &__descr {
+            margin-top: 27px;
+            max-width: 300px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+.team {
+    padding: 146px 0 150px 0;
+    .title {
+        &:first-child {
+            margin-left: -5px;
+        }
+    }
+    &__slider {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 70px;
+        
+        .slider-item {
+            width: 350px;
+            height: 520px;
+            border: 6px solid #E2E6E7;
+            &__photo {
+                width: calc(100% + 12px);
+                margin-left: -6px;
+                margin-top: -6px;
+            }
+            &__name {
+                padding: 52px 0 0 50px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                color: $color-titles;
+            }
+            &__descr {
+                padding-left: 53px;
+                margin-top: 7px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: $main-color;
+            }
+        }
+        .slick-list {
+            margin: 0 -21px;
+        }
+        .slick-slide {
+            margin: 0 17px 0 15px;
+        }
+        .slick-prev, .slick-next {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            top: -84px;
+            outline: none;
+            transition: 0.2s all;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            &:hover {
+                box-shadow: $main-color 0 0 5px;
+            }
+        }
+        .slick-prev {
+            margin: 0 auto;
+            border: 2px solid $main-color;
+            right: 70px;
+            background-color: #fff;
+            opacity: 0.5;
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        .slick-next {
+            background-color: $main-color;
+            border: none;
+            right: 0;
+        }
+        
+    }
+}

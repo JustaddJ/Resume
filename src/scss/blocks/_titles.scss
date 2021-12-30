@@ -7,6 +7,16 @@
     margin-bottom: 0;
     &_dot {
         color: $main-color;
-        font-size: 55px;
+    }
+    &_small {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    &_subtitle {
+        margin-top: 34px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
     }
 }
