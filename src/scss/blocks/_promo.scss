@@ -1,4 +1,48 @@
 .promo {
-    padding: 70px 0 72px;
+    padding-bottom: 72px;
     background-color: #F9F9F9;
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &-item {
+        .title {
+            margin-left: -5px;
+            margin-top: 214px;
+            font-size: 64px;
+            &_dot {
+                font-size: 70px;
+            }
+        }
+        &__descr {
+            margin-top: 20px;
+            max-width: 500px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: $color-descr;
+            span {
+                color: $main-color;
+            }
+        }
+        &__links {
+            margin-top: 172px;
+            display: flex;
+            align-items: center;
+            a {           
+                margin-right: 82px;
+                &:nth-child(3) {
+                    padding-top: 14px;
+                }
+            }
+        }
+        &__photo {
+            margin-bottom: -20px;
+        }
+    }
+    
+    
+    
+    
 }

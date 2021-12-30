@@ -1,0 +1,12 @@
+.title {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+    color: $color-titles;
+    margin-bottom: 0;
+    &_dot {
+        color: $main-color;
+        font-size: 55px;
+    }
+}

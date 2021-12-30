@@ -1,0 +1,19 @@
+.btn {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 181px;
+    height: 70px;
+    background-color: $main-color;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s all;
+    img {
+        margin-left: 16px;
+    }
+    &:hover {
+        color: #fff;
+        box-shadow: $main-color 0px 0px 5px ;
+    }
+}

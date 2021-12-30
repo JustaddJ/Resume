@@ -1,37 +1,43 @@
 .header {
-    display: flex;
-    align-items: center;
-    &__logo {
-        margin-right: 555px;
+    padding-top: 70px;
+    background-color: #F9F9F9;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .nav {
-        &__list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-            display: flex;
-            margin-right: 42px;
-        }
-        &-link {
-            margin-right: 30px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            position: relative;
-            transition: all 0.2s;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 2px;
-                background-color: $main-color;
-                bottom: -10px;
-                transition: all 0.2s;
+    &__links {
+        display: flex;
+        align-items: center;
+        .nav {
+            &__list {
+                list-style-type: none;
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                margin-right: 42px;
             }
-            &:hover {
+            &-link {
+                margin-right: 30px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                position: relative;
+                transition: all 0.2s;
                 &::before {
-                    width: 15px;
-                    opacity: 1;
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background-color: $main-color;
+                    bottom: -10px;
+                    transition: all 0.2s;
+                }
+                &:hover {
+                    &::before {
+                        width: 15px;
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -46,6 +52,10 @@
             font-weight: 500;
             font-size: 18px;
             letter-spacing: 0.02em;
+            transition: 0.2s all;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
     &__link {
@@ -58,7 +68,7 @@
         border: 2px solid $main-color;
         color: $main-color;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 14px;
         letter-spacing: 0.02em;
         transition: all 0.4s;
