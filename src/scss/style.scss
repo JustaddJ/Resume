@@ -114,6 +114,7 @@ a {
         }
         .title_small {
             margin-top: 58px;
+            margin-left: -3px;
         }
         &__descr {
             margin-top: 27px;
@@ -135,11 +136,15 @@ a {
         position: relative;
         margin: 0 auto;
         margin-top: 70px;
-        
         .slider-item {
+            position: relative;
             width: 350px;
             height: 520px;
             border: 6px solid #E2E6E7;
+            &__wrapper {
+                position: relative;
+                transition: 0.3s all;
+            }
             &__photo {
                 width: calc(100% + 12px);
                 margin-left: -6px;
@@ -160,6 +165,31 @@ a {
                 font-size: 18px;
                 color: $main-color;
             }
+            &:hover {
+                cursor: pointer;
+            }
+            &__about {
+                position: absolute;
+                opacity: 0;
+                top: -6px;
+                left: -6px;
+                width: 350px;
+                height: 520px;
+                padding: 77px 59px 161px 40px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 25px;
+                background-color: $main-color;
+                transition: 0.3s all;
+                &:hover {
+                    opacity: 1;
+                }
+                &_text {
+                    margin-bottom: 29px;
+                }
+            }
         }
         .slick-list {
             margin: 0 -21px;
@@ -172,7 +202,7 @@ a {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            top: -84px;
+            top: -145px;
             outline: none;
             transition: 0.2s all;
             img {
