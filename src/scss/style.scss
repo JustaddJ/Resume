@@ -67,18 +67,6 @@ a {
         }
         &__link {
             margin-top: 70px;
-            display: flex;
-            align-items: center;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            color: $main-color;
-            img {
-                margin-left: 15px;
-            }
-            &:hover {
-                color: $main-color;
-            }
         }
     }
 }
@@ -228,6 +216,48 @@ a {
             border: none;
             right: 0;
         }
-        
+    }
+}
+.how {
+    background-color: #F9F9F9;
+    padding-top: 141px;
+    min-height: 1051px;
+    position: relative;
+    &__photo {
+        position: absolute;
+        right: 0;
+        top: 0;    
+    }
+    &__wrapper {
+        margin-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 828px;
+    }
+    &-item {
+        max-width: 350px;
+        margin-bottom: 48px;
+        &__number {
+            color: $main-color;
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+        }
+        .title_small {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+        &__descr {
+            margin-top: 25px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-descr;
+        }
+    }
+    .btn {
+        margin-top: 20px;
     }
 }
