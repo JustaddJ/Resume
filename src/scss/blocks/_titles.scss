@@ -19,4 +19,20 @@
         font-weight: 400;
         font-size: 18px;
     }
+    
 }
+@media screen and (max-width: 1550px) {
+    .title {
+        font-size: 36px;
+        &_small {
+            font-size: 18px;
+        }
+        &_dot {
+            font-size: 50px;
+        }
+        &_subtitle {
+            font-size: 16px;
+        }
+    }
+}
+

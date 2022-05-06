@@ -6,12 +6,17 @@
         align-items: center;
         justify-content: space-between;
     }
+    .hamburger {
+        display: none;
+    }
     &__links {
         display: flex;
         align-items: center;
+        .menu {
+            display: none;
+        }
         .nav {
             &__list {
-                list-style-type: none;
                 padding-left: 0;
                 margin: 0;
                 display: flex;
@@ -68,13 +73,129 @@
         border: 2px solid $main-color;
         color: $main-color;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.02em;
         transition: all 0.4s;
         &:hover {
             color: #fff;
             background-color: $main-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .header {
+        padding-top: 49px;
+        .hamburger {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+        }
+        &__wrapper {
+            position: relative;
+        }
+        &__links {
+            padding-right: 99px;
+            .nav {
+                display: none;                
+            }
+            .menu {
+                z-index: 2;
+                opacity: 0;
+                display: block;
+                pointer-events: none;
+                position: absolute;
+                right: -15px;
+                top: -49px;
+                width: 314px;
+                height: 659px;
+                padding: 49px 15px 0 40px;
+                background-color: #fff;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+                transition: 0.4s all;
+                &_active {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                &__list {
+                    margin-top: 132px;
+                    li {
+                        margin-bottom: 34px;
+                    }
+                }
+                &-link {
+                    font-family: 'Gotham Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: $color-titles;
+                    span {
+                        color: $main-color;
+                        font-size: 27px;
+                    }
+                }
+                &_close {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 61px;
+                    right: 15px;
+                }
+            }
+        }
+        &__tel {
+            margin-right: 40px;
+            &_link {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        padding-top: 60px;
+        &__wrapper {
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-right: 65px;
+            width: 82px;
+            height: 13px;
+        }
+        &__links {
+            padding-right: 0px;
+            .menu {
+                width: 270px;
+                height: 448px;
+                padding: 60px 14px 82px 65px;
+                top: -60px;
+                &__list {
+                    margin-top: 72px;
+                    li {
+                        margin-bottom: 27px;
+                    }
+                }
+                &-link {
+                    font-size: 20px;
+                    line-height: 23px;
+                    
+                }
+                &_close {
+                    top: 66px;
+                }
+            }
+        }
+        &__tel {
+            display: none;
+        }
+        &__link {
+            width: 135px;
+            height: 40px;
+        }
+        .hamburger {
+            top: 6px;
         }
     }
 }

@@ -1,0 +1,160 @@
+.footer {
+    padding: 149px 0 115px;
+    background: linear-gradient(98.9deg, rgba(255, 255, 255, 0.05) 0.2%, rgba(255, 255, 255, 0) 100.2%), #3D3C4A;
+    .container {
+        position: relative;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &-item {
+        &:first-child {
+            max-width: 262px;
+            margin-right: 152px;
+            .footer-item__title {
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+        &:nth-child(3){
+            max-width: 425px;
+            margin-left: 152px;
+            .footer-item__list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &_link {
+                    width: 120px;
+                }
+            }
+        }
+        &__title {
+            position: relative;
+            font-family: 'Gotham Pro';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin: 0;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 4px;
+                background-color: #FFFFFF;
+                bottom: -48px;
+                left: 0px;
+            }
+        }
+        &__descr {
+            margin-top: 88px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            font-weight: 300;
+            font-size: 14px;
+
+        }
+        &__about {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin-top: 37px;
+                color: #FFFFFF;
+                opacity: 0.75;
+                letter-spacing: 0.02em;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+        &__links {
+            margin-top: 31px;
+            display: flex;
+            justify-content: space-between;
+            // }
+        }
+        &__list {
+            margin-top: 88px;
+            &_link {
+                font-weight: 400;
+                font-size: 18px;
+                color: #FFFFFF;
+                &:hover {
+                    color: #FFFFFF;
+                }
+                li {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    .pageup {
+        position: absolute;
+        bottom: 48px;
+        right: 0;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        img {
+            margin-left: 13px;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .footer {
+        padding: 100px 0 90px;
+        &-item {
+            &:first-child {
+                max-width: 141px;
+                margin-right: 121px;
+                .footer-item__title {
+                    font-size: 18px;
+                }
+            }
+            &:nth-child(3) {
+                max-width: 410px;
+                margin-left: 112px;
+                .footer-item__list {
+                    &_link {
+                        width: 103px;
+                    }
+                }
+            }
+            &__title {
+                font-size: 16px;
+                &::after {
+                    bottom: -40px;
+                }
+            }
+            &__descr {
+                margin-top: 80px;
+                max-width: 134px;
+                line-height: 19px;
+            }
+            &__about {
+                margin-top: 31px;
+                flex-direction: column;
+                a {
+                    font-size: 13px;
+                    margin-top: 0;
+                    margin-bottom: 11px;
+                }
+            }
+            &__links {
+                margin-top: 35px;
+                flex-wrap: wrap;
+            }
+            &__list {
+                margin-top: 86px;
+                &_link {
+                    font-size: 16px;
+                }
+            }
+        }
+        .pageup {
+            bottom: 120px;
+        }
+    }
+}

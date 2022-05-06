@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 181px;
+    width: 181px;
     height: 70px;
     background-color: $main-color;
     color: #fff;
@@ -14,7 +14,7 @@
     transition: 0.3s all;
     img {
         margin-left: 16px;
-        padding-bottom: 1px;
+        margin-top: 1px;
     }
     &_red {
         display: none;
@@ -52,6 +52,6 @@
         }
     }
     &_big {
-        max-width: 225px;
+        width: 225px;
     }
 }
