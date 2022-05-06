@@ -28,29 +28,27 @@ $(document).ready(function(){
     });
 });
 
-$('.testimonials__slider_desktop').slick({
-  infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>'
+$(document).ready(function(){
+  $('.testimonials__slider_desktop').slick({
+    infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>'
+  });
 });
 
-$('.testimonials__slider_mobile').slick({
-  infinite: true,
-    speed: 500,
-    fade: true,
-    slidesToShow: 2,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
-    responsive: [
-      {
-         breakpoint: 768,
-         slidesToShow: 1
-      }
-    ]
+$(document).ready(function(){
+  $('.testimonials__slider_mobile').slick({
+    infinite: true,
+      speed: 500,
+      fade: true,
+      slidesToShow: 2,
+      cssEase: 'linear',
+      prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>'
+  });
 });
 // $('.testimonials__slider-item').slick({
 //   mobileFirst: true,

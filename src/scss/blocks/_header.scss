@@ -199,3 +199,10 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .header {
+        &__logo {
+            margin-right: 30px;
+        }
+    }
+}
