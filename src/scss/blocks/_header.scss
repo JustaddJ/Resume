@@ -1,5 +1,5 @@
 .header {
-    padding-top: 70px;
+    padding: 70px 0;
     background-color: #F9F9F9;
     &__wrapper {
         display: flex;
@@ -16,6 +16,7 @@
             display: none;
         }
         .nav {
+            position: relative;
             &__list {
                 padding-left: 0;
                 margin: 0;
@@ -23,19 +24,50 @@
                 margin-right: 42px;
             }
             &-link {
+                padding-bottom: 20px;
+                margin-top: 20px;
                 margin-right: 30px;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 position: relative;
                 transition: all 0.2s;
+                .service-window {
+                    display: none;
+                    position: absolute;
+                    top: 40px;
+                    padding: 20px 40px 18px 28px;
+                    width: 226px;
+                    height: 361px;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+                    transition: all 0.5s;
+                    .service__item {
+                        font-size: 14px; 
+                        margin-bottom: 16px;
+                        opacity: 0.85;
+                        a {
+                            color: $color-descr;
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                        
+                    }
+                }
+                &_menu {
+                    &:hover {
+                        .service-window {
+                            display: block;
+                        }
+                    }
+                }
                 &::before {
                     content: "";
                     position: absolute;
                     width: 0;
                     height: 2px;
                     background-color: $main-color;
-                    bottom: -10px;
+                    bottom: 3px;
                     transition: all 0.2s;
                 }
                 &:hover {
@@ -45,6 +77,7 @@
                     }
                 }
             }
+            
         }
     }
     &__tel {

@@ -1,0 +1,22 @@
+* {
+    font-family: 'Avenir Next', sans-serif;
+}
+.container {
+    max-width: 1490px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+a {
+    color: #474654;
+    &:hover {
+        text-decoration: none;
+        color: #474654;
+    }
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}

@@ -3,13 +3,13 @@
     background-color: #F9F9F9;
     &__wrapper {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: space-between;
     }
     &-item {
         &__title {
             margin-left: -5px;
-            margin-top: 214px;
+            margin-top: 144px;
             font-size: 64px;
             &_dot {
                 font-size: 70px;
@@ -52,7 +52,7 @@
         overflow: hidden;
         &-item {
             &__title {
-                margin-top: 138px;
+                margin-top: 44px;
             }
             &__descr {
                 font-size: 16px;
@@ -68,7 +68,6 @@
                 }
             }
             &__photo {
-                margin-top: 59px;
                 width: 450px;
                 margin-bottom: -59px;
                 img {
@@ -83,7 +82,7 @@
         &-item {
             max-width: 100%;
             &__title {
-                margin-top: 165px;
+                margin-top: 100px;
                 line-height: 48px;
             }
             &__descr {

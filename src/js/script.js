@@ -62,11 +62,10 @@ $(document).ready(function(){
 //   ]
 // });
 
-
 $(function() {
   $('.pageup').click(function() {
     $("html, body").animate({
       scrollTop:0
-    },1000);
+    },800);
   })
 });

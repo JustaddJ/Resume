@@ -1,0 +1,266 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/common';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/get';
+@import 'blocks/footer';
+
+.promo {
+    padding-bottom: 130px;
+    overflow: hidden;
+    &__wrapper {
+        padding-top: 58px;
+        align-items: center;
+    }
+    &-item {
+        &__title {
+            margin-top: 0;
+            font-size: 64px;
+        }
+        &__photo {
+            position: relative;
+            &_bottom {
+                position: absolute;
+                left: -197px;
+                top: 133px;
+            }
+        }
+    }
+}
+.resume {
+    padding: 150px 0 77px;
+    &__title {
+        margin-left: -5px;
+        &_subtitle {
+            margin-top: 20px;
+            font-weight: 400;
+            max-width: 721px;
+            line-height: 28px;
+        }
+    }
+    &__wrapper {
+        margin-top: 62px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        max-width: 721px;
+        margin-right: 96px;
+        margin-bottom: 20px;
+        &__title {
+            margin-top: 68px;
+            font-family: 'Gotham Pro';
+            font-weight: 500;
+            font-size: 24px;
+            color: $color-descr;
+        }
+        &__descr {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-descr;
+            margin-bottom: 27px;
+            margin-top: 23px;
+        }
+        &__rating {
+            margin-top: 56px;
+            padding: 31px 30px 34px;
+            background-color: #F9F9F9;
+            box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            .reviews {
+                max-width: 364px;
+                &__title {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    &_red {
+                        color: $main-color;
+                        font-weight: 500;
+                    }
+                }
+                &__link {
+                    margin-top: 14px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #AEADB9;
+                    a {
+                        color: $main-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .grade {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                &__btn {
+                    margin-top: 30px;
+                    width: 188px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .block-item {
+            width: 390px;
+            max-height: 315px;
+            border: 6px solid #F1F1F1;
+            .block--header {
+                padding: 36px 44px 30px 30px;
+                display: flex;
+                justify-content: space-between;
+                background-color: $color-descr;
+                width: 100%;
+                &__title {
+                    font-family: 'Gotham Pro';
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #fff;
+                }
+                &__descr {
+                    max-width: 243px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+            .block__list {
+                padding: 25px 0 38px 30px;
+                .block__item {
+                    position: relative;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $color-titles;
+                    padding-left: 30px;
+                    margin-bottom: 18px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        background-color: $main-color;
+                        top: 8px;
+                        left: 7px;
+                    }
+                    &-link {
+                        text-decoration: underline;
+                    }
+                }             
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 15px 0 13px;
+    }
+    .promo {
+        &__wrapper {
+            padding-top: 0;
+        }
+        &-item {
+            &__title {
+                font-size: 36px;
+            }
+            &__photo {
+                &_bottom {
+                    display: none;
+                }
+            }
+            .btn {
+                width: 225px;
+            }
+        }
+    }
+    .resume {
+        &__blocks {
+            justify-content: space-evenly;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 375px;
+        padding: 0 15px;
+    }
+    .promo {
+        padding-top: 58px;
+    }
+    .resume {
+        padding: 80px 0 50px;
+        &__wrapper {
+            margin-top: 0;
+            flex-wrap: wrap;
+        }
+        &-item {
+            margin-right: 0;
+            &__title {
+                margin-top: 40px;
+            }
+            &__rating {
+                flex-wrap: wrap;
+                justify-content: center;
+                .grade {
+                    max-width: unset;
+                    align-items: center;
+                    margin-top: 30px;
+                }
+            }
+        }
+        &__blocks {
+            margin-top: 50px;
+            .block-item {
+                margin-bottom: 30px;
+                max-width: 390px;
+                width: unset;
+                .block--header {
+                    padding: 30px 40px 30px 25px;
+                    &__icon {
+                        margin-right: 20px;
+                    }
+                    &__title {
+                        font-size: 20px;
+                    }
+                    &__descr {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .resume {
+        &__blocks {
+            .block-item {
+                max-height: 360px;
+                .block--header {
+                    padding: 20px 40px 20px 25px;
+                }
+                .block__list {
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/common';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/get';
+@import 'blocks/footer';
+
+.blog {
+    padding: 76px 0 111px;
+    &__wrapper {
+        margin-top: 51px;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    &-item {
+        max-width: 635px;
+        margin-right: 30px;
+        margin-bottom: 61px;
+        &__photo {
+            width: 100%;
+        }
+        &__content {
+            padding: 40px 59px 47px 38px;
+            border: 6px solid #F1F1F1;
+        }
+        &__title {
+            font-family: 'Gotham Pro';
+            font-weight: 500;
+            font-size: 24px;
+            color: $color-titles;
+        }
+        &__text {
+            margin-top: 26px;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-descr;
+        }
+        &__link {
+            height: 0;
+            justify-content: flex-start;
+        }
+        &_timing {
+            margin-top: -10px;
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 15px 0 13px;
+    }
+    .blog {
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &-item {
+            margin-right: 0;
+            max-width: 480px;
+            margin-bottom: 50px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 375px;
+        padding: 0 15px;
+    }
+    .blog {
+        padding: 60px 0 80px;
+        &-item {
+            &__content {
+                padding: 30px 35px 30px 30px;
+            }
+            &__title {
+                font-size: 20px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+            &__link {
+                font-size: 16px;
+            }
+            &_timing {
+                margin-top: -12px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .blog {
+        padding: 40px 0 50px;
+        &-item {
+            &__content {
+                padding: 20px 20px 30px 20px;
+            }
+        }
+    }
+}

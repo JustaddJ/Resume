@@ -1,0 +1,180 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/common';
+
+@import 'blocks/header';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/footer';
+
+.header {
+    background-color: #FFFFFF;
+}
+.feedback {
+    padding: 130px 0 150px;
+    background-color: #f9f9f9;
+    &__title{
+        &_subtitle {
+            margin-top: 26px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 52px;
+        .contacts-form {
+            margin-right: 124px;
+            &__wrapper {
+                display: flex;
+            }
+            &__textarea {
+            margin-right: 30px;
+                textarea {
+                    display: block;
+                    resize: none;
+                    width: 445px;
+                    height: 180px;
+                    padding: 23px 20px;
+                    background: #FFFFFF;
+                    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.02);
+                    outline:none;
+                    border: none;
+                }
+                textarea::placeholder {
+                    opacity: 0.45;
+                }
+            }
+            &__input {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                input {
+                    width: 351px;
+                    height: 70px;
+                    padding-left: 24px;
+                    background: #FFFFFF;
+                    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.02);
+                    outline:none;
+                    border: none;
+                }
+                input::placeholder {
+                    opacity: 0.45;
+                }
+            }
+            &__btn {
+                width: 198px;
+                border: none;
+                outline:none;
+            }
+        }
+        .feedback-info {
+            max-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__img {
+                margin-right: 30px;
+            }
+            &__text {
+                font-size: 18px;
+                color: $color-descr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 15px 0 13px;
+    }
+    .feedback {
+        padding: 100px 0 90px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        .feedback-info {
+            margin-top: 90px;
+            flex-direction: row;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 375px;
+        padding: 0 15px;
+    }
+    .feedback {
+        padding: 80px 0 50px;
+        &__title {
+            line-height: 48px;
+        }
+        .contacts-form {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__textarea {
+                margin-right: 0;
+                margin-bottom: 30px;
+                textarea {
+                    width: 345px;
+                }
+            }
+            &__input {
+                input {
+                    margin-bottom: 30px;
+                    width: 345px;
+                }
+            }
+            &__btn {
+                width: 345px;
+            }
+        }
+        .feedback-info {
+            margin-top: 70px;
+            padding-left: 50px;
+            flex-direction: column;
+            justify-content: center;
+            &__img {
+                margin-right: 20px;
+            }
+            &__text {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .feedback {
+        padding-top: 58px;
+        .contacts-form {
+            &__textarea {
+                margin-bottom: 20px;
+                textarea {
+                    width: 290px;
+                }
+            }
+            &__input {
+                input {
+                    margin-bottom: 20px;
+                    width: 290px;
+                }
+            }
+            &__btn {
+                width: 290px;
+                margin-top: 20px;
+            }
+        }
+        .feedback-info {
+            padding-left: 25px;
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+}

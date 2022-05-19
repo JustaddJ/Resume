@@ -205,8 +205,8 @@
     }
 }
 @media screen and (max-width: 375px) {
-    &-item {
-        &:nth-child(3) {
+    .footer-item {
+        &:nth-child(1) {
             margin-right: 40px;
         }
     }

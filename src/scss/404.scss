@@ -1,0 +1,72 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/common';
+
+@import 'blocks/header';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/footer';
+
+.error {
+    padding: 57px 0 170px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 36px;
+        &_subtitle {
+            color: $color-descr;
+        }
+    }
+    &__photo {
+        max-width: 669px;
+        margin-top: 56px;
+    }
+}
+
+@media screen and (min-height: 1560px) {
+    .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    
+}
+@media screen and (max-width: 1550px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 15px 0 13px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 375px;
+        padding: 0 15px;
+    }
+    .error {
+        padding-bottom: 100px;
+        &__title {
+            line-height: 48px;
+        }
+        &__photo {
+            max-width: 345px;
+        }
+    }
+}    
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .error {
+        &__title {
+            font-size: 31px;
+        }
+        &__photo {
+            max-width: 320px;
+        }
+    }
+}
