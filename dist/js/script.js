@@ -50,22 +50,17 @@ $(document).ready(function(){
       nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>'
   });
 });
-// $('.testimonials__slider-item').slick({
-//   mobileFirst: true,
-//   prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
-//   nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_red.svg" class="arrow_red"><img src="icons/arrow_white.svg" class="arrow_white"></button>',
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: "unslick"
-//     }
-//   ]
+
+// $(function() {
+//   $('.pageup').click(function() {
+//     $("html, body").animate({
+//       scrollTop:0
+//     },800);
+//   })
 // });
 
-$(function() {
-  $('.pageup').click(function() {
-    $("html, body").animate({
-      scrollTop:0
-    },800);
-  })
+const scroll = document.querySelector('.pageup');
+
+scroll.addEventListener('click', () => {
+  document.documentElement.scrollTop = 0;
 });

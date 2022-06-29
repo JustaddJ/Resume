@@ -13,6 +13,10 @@
 
 @import 'libs/slick';
 
+html {
+    scroll-behavior: smooth;
+}
+
 .services {
     &__wrapper {
         display: flex;
